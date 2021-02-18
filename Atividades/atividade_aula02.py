@@ -105,7 +105,8 @@ data['yr_renovated'] = pd.to_datetime(data['yr_renovated'], format= '%Y', errors
 # 13. Quantos imóveis estão com a condição igual a "good" e são "new_house"?condition_type
 #print(data.loc[(data['condition_type'] == 'good') & (data['house_age'] == 'new_house') ]) #R:423 or 1701 (if it was 2014)
 # ===================================================================================================================
-
+data[(data.condition_type == 'good') & (data.house_age == 'new_house')]
+data.loc[(data['condition_type'] == 'good') & (data['house_age'] == 'new_house')
 # ===================================================================================================================
 # 14. Qual o valor do imóvel mais caro do tipo "studio"?
 #print( data.loc[ (data['dormitory_type'] == 'studio')].price.max() ) #R:1247000.0
