@@ -1,3 +1,5 @@
+# $ streamlit run dashboard.py
+
 import geopandas
 import streamlit as st
 import pandas    as pd
@@ -274,7 +276,7 @@ def attributes_distribution( data ):
 if __name__ == '__main__':
     # ETL
     # --- Data Extration
-    path = 'datasets/kc_house_data.csv'
+    path = '../datasets/kc_house_data.csv'
     data = get_data(path)
 
     url = 'https://opendata.arcgis.com/datasets/83fc2e72903343aabff6de8cb445b81c_2.geojson'

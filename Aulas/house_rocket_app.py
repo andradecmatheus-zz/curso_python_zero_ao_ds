@@ -1,3 +1,5 @@
+# $ streamlit run house_rocket_app.py
+
 import pandas as pd
 import numpy as np
 #from geopy.geocoders import Nominatim
@@ -18,7 +20,7 @@ def get_data( path ):
     return data
 
 # Load Data
-data = get_data( 'datasets/kc_house_data.csv' )
+data = get_data( '../datasets/kc_house_data.csv' )
 # st.dataframe( data.head() )
 
 # # Filter Bedrooms
